@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Election AI Assistant</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <!-- Header -->
+  <div class="header">
+    <h2>🗳️ Election Assistant</h2>
+    <p class="sub">Hello 👋 Ask me anything about elections</p>
+  </div>
+
+  <!-- Chat -->
+  <div id="chatBox" class="chat-box">
+
+    <div class="message bot">
+      How can I help you today?
+    </div>
+
+    <!-- Quick Buttons -->
+    <div class="quick-buttons">
+      <button onclick="ask('Can I vote?')">Can I Vote?</button>
+      <button onclick="ask('Explain voting steps')">Voting Steps</button>
+      <button onclick="ask('How to apply voter ID?')">Voter ID</button>
+    </div>
+
+  </div>
+
+  <!-- Input -->
+  <div class="input-area">
+    <input type="text" id="userInput" placeholder="Type your question...">
+    <button onclick="sendMessage()">➤</button>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
